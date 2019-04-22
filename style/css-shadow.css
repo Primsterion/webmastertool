@@ -1,0 +1,130 @@
+
+.css-menu-shadow{
+    display: none;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.css-menu-shadow input[type=text]{
+    position: relative;
+    bottom: 5.2px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--range-clr);
+    width: 55px;
+}
+
+.tool-collection-shadow{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.alpha, .position, .blur, .color, .block{
+    display: inline-block;
+}
+
+.alpha-numb{
+    width: 50px !important;
+}
+
+.shadow-color-pick1{
+    background: #000;
+}
+.color > .clr, .color > p, .color > input{
+    display: inline-block;
+}
+
+.color > p{
+    position: relative;
+    bottom: 15px;
+}
+
+.color > input{
+    position: relative;
+    top: 10px;
+    float: right;
+}
+
+.numb{
+    width: 43px;
+}
+
+.color > input{
+    width: 60px;
+    border: none;
+    border-bottom: 1px solid var(--range-clr);
+    background: none;
+}
+
+.clr{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #C4C4C4;
+    cursor: pointer;
+}
+
+.shadow-color-pick1, .shadow-color-pick2, .shadow-color-pick3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.color-block{
+    background: #FFFFFF;
+}
+
+.type-shadow{
+    display: inline;
+}
+
+.block{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background: #C4C4C4;
+}
+
+.box{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    box-shadow: 4px 4px 4px #aaaaaa;
+}
+
+.css-code-shadow{
+    position: relative;
+    width: 80%;
+    height: 25%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    margin: 9vh auto 0 auto;
+    overflow: hidden;
+}
+
+.copy-btn-shadow{
+    position: absolute;
+    bottom: 20px;
+}
+
+.css-code-shadow textarea{
+    width: 95%;
+    height: 60%;
+    text-align: left;
+    padding: 10px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 8pt;
+}

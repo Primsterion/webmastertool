@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebMasterTool</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/icon-title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/colorpicker.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/css-grad.css">
+    <link rel="stylesheet" href="./style/css-shadow.css">
+    <link rel="stylesheet" href="./style/css-border.css">
+    <link rel="stylesheet" href="./style/js.css">
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/range.css">
+    <link rel="stylesheet" href="./style/animate.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">WebMasterTool</h1>
+    </header>
+    <div class="container">
+        <nav class="navigation">
+            <div class="css nav"><img src="./img/css-3.svg" alt="CSS" width="35" height="35">
+                <ul class="css-nav">
+                    <li class="css-grd nav-el" id="css-menu-grad">Gradient</li>
+                    <li class="css-shd nav-el" id="css-menu-shadow">Shadow</li>
+                    <li class="css-brd nav-el" id="css-menu-border">Border</li>
+                </ul>
+            </div>
+            <div class="nav-el js nav" id="js-compress"><img src="./img/java-script.svg" alt="js" width="35" height="35" id="js-compress"></div>
+            <div class="link nav nav-el" id="links"><img src="./img/link.svg" alt="links" width="35" height="35" id="links"></div>
+            <div class="idea nav nav-el" id="feedback"><img src="./img/idea.png" alt="" width="35" height="35" id="feedback"> </div>
+        </nav>
+        <!--Блок для изменения текущего инструмента-->
+        <div class="container-tool main">
+            <div class="menu main-menu wow slideInRight" data-wow-duration=".45s">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+            <div class="menu css-menu-grad wow slideInRight" data-wow-duration=".45s">
+                <div class="gradient"></div>
+                <div class="toolbox-grad">
+                    <div class="left-col">
+                        <form action="" class="form-grad">
+                        <div class="color1"><div class="color-pick1"></div></div> 
+                        <input type="range" class="range grad_range1" min="0" max="100" value="0">
+                        <input type="text" class="numb grad_numb1" min="0" max="100" value="0"><br>
+                        <div class="color2"><div class="color-pick2"></div></div>
+                        <input type="range" class="range grad_range2" min="0" max="100" value="100">
+                        <input type="text" class="numb grad_numb2" min="0" max="100" value="100"><br>
+                        <p>Deg</p>
+                        <input type="range" class="range deg" min="0" max="360" value="180">
+                        <input type="text" class="numb deg_numb" min="0" max="360" value="180">
+                        </form>
+                    </div>
+                    <div class="right-col"></div>
+                </div>
+                <div class="css-code-grad">
+                    <textarea name="code" id="code" readonly="readonly"></textarea><br>
+                    <input type="button" class="copy-btn-grad copy-btn" value="copy">
+                </div>
+            </div>
+            <div class="menu css-menu-shadow wow slideInRight" data-wow-duration=".45s">
+                <div class="tool-collection-shadow">
+                    <div class="position">
+                            <form action="" name="position-form">
+                                <p>X</p>
+                                <input type="range" class="range posX_range" min="-100" max="100" value = "0"  step="1">
+                                <input type="text" class="numb posX_num" min="-100" max="100" value = "0" step="1"><br>
+                                <p>Y</p>
+                                <input type="range" class="range posY_range" min="-100" max="100" value = "0" step="1">
+                                <input type="text" class="numb posY_num" min="-100" max="100" value = "0" step="1"> 
+                            </form>
+                        </div>
+                    <div class="alpha">
+                        <form action="" name="alpha-form">
+                            <p>Alpha</p><br>
+                            <input type="range" step="0.01" class="range alpha-range" min="0" max="1" value="0.75">
+                            <input type="text" step="0.01"class="numb alpha-numb" min="0" max="1" value="0.75"><br>
+                            <input type="radio" name="type-of-shadow" class="type-shadow" id="type-shadow-in">
+                            <label for="type-shadow-in" class="type-shadow">Inset</label><br>
+                            <input type="radio" name="type-of-shadow" class="type-shadow" id="type-shadow-out" checked>
+                            <label for="type-shadow-out" class="type-shadow">Outline</label>
+                        </form>
+                    </div>
+                    <div class="block">
+                        <div class="box"></div>
+                    </div>
+                    <div class="color">
+                        <div class="clr color-shadow"><div class="shadow-color-pick1"></div></div>
+                        <p>Shadow color</p>
+                        <input type="text" class="shadow-color-numb" value="#000000"><br>
+                        <div class="clr color-bg"><div class="shadow-color-pick2"></div></div>
+                        <p>Background color</p>
+                        <input type="text" class="shadow-bg-numb" value="#c4c4c4"><br>
+                        <div class="clr color-block"><div class="shadow-color-pick3"></div></div>
+                        <p>Block color</p>
+                        <input type="text" class="shadow-block-numb" value="#ffffff">
+                    </div>
+                    <div class="blur">
+                        <form action="" name="blur-form">
+                            <p>Blur</p>
+                            <input type="range" class="range blur_range" min="0" max="150" value="0" step="1">
+                            <input type="text" class="numb blur_num" min="0" max="150" value="0"><br>
+                            <p>Spread</p>
+                            <input type="range" class="range spread_range" min="0" max="150" value="0" step="1">
+                            <input type="text" class="numb spread_num" min="0" max="150" value="0">
+                        </form>
+                    </div>
+                </div>
+                <div class="css-code-shadow">
+                    <textarea name="code" id="code-shadow" readonly="readonly"></textarea><br>
+                    <input type="button" class="copy-btn-shadow copy-btn" value="copy">
+                </div>
+            </div>
+            <div class="menu css-menu-border wow slideInRight" data-wow-duration=".45s">
+                <div class="corner">
+                    <form action="" name="corner-form">
+                        <p>All corners</p>
+                        <input type="range" class="range" min="0" max="200">
+                        <input type="text"  min="0" max="200"><br>
+                        <p>Top left</p>
+                        <input type="range" class="range" min="0" max="200">
+                        <input type="text"  min="0" max="200"><br>
+                        <p>Top right</p>
+                        <input type="range" class="range" min="0" max="200">
+                        <input type="text" min="0" max="200"><br>
+                        <p>Bottom right</p>
+                        <input type="range" class="range" min="0" max="200">
+                        <input type="text" min="0" max="200"><br>
+                        <p>Bottom left</p>
+                        <input type="range" class="range" min="0" max="200">
+                        <input type="text" min="0" max="200">
+                    </form>
+                </div>
+                <div class="box-border">
+                    <div class="block-border"></div>
+                </div>
+                <div class="border-style">
+                    <p>Border width</p>
+                    <input type="range" class="range range-border-width" min="0" max="200">
+                    <input type="text" min="0" max="200"><br>
+                    <p class="p-bd-stl">Border style</p>
+                    <select name="border-stl" id="bd-st">
+                        <option value="">solid</option>
+                        <option value="">dotted</option>
+                        <option value="">dashed</option>
+                        <option value="">double</option>
+                        <option value="">groove</option>
+                        <option value="">ridge</option>
+                        <option value="">inset</option>
+                        <option value="">outset</option>
+                        <option value="">inherit</option>
+                        <option value="">hidden</option>
+                        <option value="">none</option>
+                    </select><br>
+                    <p class="p-bd">Border color</p>
+                    <div class="color-br"></div>
+                    <p class="p-bd">Background color</p>
+                    <div class="color-br"></div>
+                </div>
+                <div class="css-code-border">
+                    <textarea name="code" id="code-border" readonly="readonly"></textarea><br>
+                    <input type="button" class="copy-btn-border copy-btn" value="copy">
+                </div>
+            </div>
+            <div class="menu js-compress wow slideInRight" data-wow-duration=".45s">
+                <div class="js-code">
+                    <textarea name="code"></textarea><br>
+                    <input type="button" class="compress-btn" value="compress">
+                    <input type="button" class="copy-btn-js copy-btn" value="copy">
+                </div>
+            </div>
+            <div class="menu links wow slideInRight" data-wow-duration=".45s">
+                <div class="js-links">
+                    <img src="./img/java-script.svg" alt="JS" width="35" height="35">
+                    <a href="http://instantclick.io/"><h3>Instantclick</h3></a>
+                    <h4>Увеличение скорости загрузки сайта</h4>
+                    <a href="https://wowjs.uk/"><h3>WOW</h3></a>
+                    <h4>Анимация на сайте</h4>
+                    <a href="http://matthew.wagerfield.com/parallax/"><h3>Parallax</h3></a>
+                    <h4>Создание параллакс эффектов</h4>
+                </div>
+                <div class="css-links">
+                    <img src="./img/css-3.svg" alt="JS" width="35" height="35">
+                    <a href="https://daneden.github.io/animate.css/"><h3>Animate.css</h3></a>
+                    <h4>Библиотека анимаций</h4>
+                    <a href="https://fontawesome.com/"><h3>Font awesome</h3></a>
+                    <h4>Библиотека иконок</h4>
+                    <a href="https://getbootstrap.com/"><h3>Bootstrap</h3></a>
+                    <h4>Фреймворк для создания адаптивной верстки</h4>
+                </div>
+            </div>
+            <div class="menu feedback wow slideInUp" data-wow-duration=".45s">
+                <div class="feedback-form">
+                    <h3>Обратная связь</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name..."><br>
+                        <input type="email" name="email" placeholder="E-Mail..."><br>
+                        <textarea name="msg" id="msg" cols="18" rows="1" maxlength="140" placeholder="Message..."></textarea><br>
+                        <input type="submit" name="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SCRIPTS-->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="./script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./script/colorpicker.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="script/shadow.js"></script>
+    <script src="script/gradient.js"></script>
+    
+</body>
+</html>

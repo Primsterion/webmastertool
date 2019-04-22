@@ -1,0 +1,158 @@
+.css-menu-grad{
+    display: none;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.css-menu-grad input[type=text]{
+    position: relative;
+    bottom: 5.2px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--range-clr);
+    width: 50px;
+}
+
+.gradient{
+    width: 80%;
+    height: 25%;
+    background: linear-gradient(180deg, #009688 0%, #ffffff 100%);
+    border-radius: 5px;
+}
+
+.toolbox-grad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    width: 70%;
+    height: 40%;
+    margin: 5px 0;
+}
+
+.numb{
+    width: 35px;
+}
+
+.right-col, .left-col{
+    display: inline-block;
+}
+
+.color1, .color2{
+    position: relative;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    display: block;
+    border-radius: 2px;
+}
+
+.color-pick1, .color-pick2{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    display: block;
+    bottom: 5px;
+}
+
+.color1{
+    background: var(--range-clr);
+}
+
+.color2{
+    background-color: #ffffff;
+}
+
+.left-tool{
+    width: 178px;
+}
+
+.left-tool p{
+    position: relative;
+    top: 3px;
+    width: 11px;
+    float: left;
+    margin-right: 10px;
+    font-size: 11pt;
+}
+
+.left-tool input[type=range]{
+    margin: 0 auto;
+}
+
+.right-col{
+    width: 150px;
+    height: 120px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background: var(--range-clr);
+}
+
+.left-col{
+    width: 205px;
+    height: 105px;
+    margin: auto;
+}
+
+.left-col div, .left-col input[type=range], .left-col p{
+    display: inline-block;
+}
+
+.left-col div, .left-col p{
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.deg{
+    position: relative;
+    top: 8px;
+}
+
+.deg_numb{
+    top: 3px;
+}
+
+.left-col p{
+    top: 10px;
+    width: 35px;
+}
+
+.css-code-grad{
+    position: relative;
+    width: 80%;
+    height: 25%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.copy-btn-grad{
+    position: absolute;
+    float: right;
+    right: 40px;
+    bottom: 20px;
+    text-transform: uppercase;
+    color: var(--range-clr);
+    background: transparent;
+    border: none;
+    font-family: var(--font);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.css-code-grad textarea{
+    width: 97%;
+    height: 70px;
+    text-align: left;
+    padding: 10px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 8pt;
+}

@@ -1,0 +1,320 @@
+/*
+Developed and designed by Kirill Mironenko
+2018 (c)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: #e2e2e2;
+    height: 100%;
+    overflow: hidden;
+}
+
+p{
+    font-family: var(--font);
+}
+
+li{
+    list-style: none;
+}
+
+input, textarea, select{
+    outline: none;
+    font-family: var(--font);
+    text-align: center;
+}
+
+label{
+    font-family: var(--font);
+}
+
+a:active{
+    color: #000;
+}
+
+a:visited{
+    color: #000;
+}
+/*==================================HEADER==================================*/
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: var(--head-bg);
+    box-shadow: 4px 1px 8px 0px rgba(0, 0, 0, 0.09);
+}
+
+header > h1{
+    color: black;
+    font-family: 'Baloo Bhai';
+    font-size: 1.8em;
+    color: #009688;
+    margin: auto;
+    cursor: pointer;
+}
+
+/*==================================NAVIGATION==================================*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.navigation{
+    margin: auto 5px auto 10px;
+    width: 70px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--head-bg);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+}
+
+.nav{
+    cursor: pointer;
+}
+
+.nav:hover{
+    transition: all .2s;
+}
+
+.css, .js, .link, .idea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-bottom: 1px solid #DEDEDE;
+    transition: all .25s;
+}
+
+.css{
+    position: relative;
+}
+
+.css:hover, .js:hover, .link:hover, .idea:hover{
+    background: rgb(192, 191, 191);
+}
+
+.css-nav{
+    display: none;
+    position: absolute;
+    width: 110px;
+    height: 122px;
+    left: 71px;
+    top: 0px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    z-index: 100;
+}
+
+.css-nav li:hover{
+    background: rgb(192, 191, 191);
+    transition: all .2s;
+    color: #fff;
+}
+
+.css-nav li{
+    color: black;
+    font-family: var(--font);
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/*==================================TOOLS==================================*/
+
+.container-tool{
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: rgb(245, 242, 242);
+    box-shadow: var(--shadow);
+    border-radius: 2px;
+}
+
+.copy-btn{
+    position: relative;
+    float: right;
+    right: 40px;
+    color: var(--range-clr);
+    background: transparent;
+    border: none;
+    font-family: var(--font);
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.copy-btn:hover{
+    color: #01b8a5;
+}
+/*==================================MAIN-MENU==================================*/
+
+.main-menu{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.img1, .img2, .img3{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.img1{background: url('../img/thinking.png') no-repeat center center;}
+.img2{background: url('../img/workspace.png') no-repeat center center;}
+.img3{background: url('../img/code.png') no-repeat center center;}
+
+.menu{
+    height: 100%;
+}
+
+/*==================================LINKS-MENU==================================*/
+
+.links{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+}
+
+.js-links, .css-links{
+    width: 394px;
+    height: 280px;
+    text-align: center;
+}
+
+.links img{
+    margin-bottom: 10px;
+}
+
+.links h3{
+    margin: 15px 0 10px 0;
+}
+
+.links a:hover{
+    color: rgb(73, 73, 73);
+    transition: all .25s;
+}
+
+/*==================================FEEDBACK-FORM==================================*/
+
+.feedback{
+    display: none;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.feedback-form{
+    text-align: center;
+    font-family: var(--font);
+    width: 25%;
+    height: 70%;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+}
+
+.feedback-form h3{
+    padding: 10px 0;
+    font-size: 3vh;
+}
+
+.feedback-form input{
+    border: none;
+    border-bottom: 1px solid #009688;
+    text-align: left !important;
+    padding: 0 5px;
+    margin: 10px 0;
+    width: 70%;
+}
+
+.feedback-form textarea{
+    border: none;
+    border-bottom: 1px solid #009688;
+    margin: 10px;
+    width: 70%;
+    height: 20px;
+    resize: none;
+    padding: 0 5px;
+    text-align: left !important;
+}
+
+.feedback-form input[type=submit]{
+    bottom: 10px;
+    margin: 0 auto;
+    background: #009688;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    width: 82px;
+    height: 25px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.feedback-form input[type=submit]:hover{
+    background: #00b8a5;
+}
+
+.colorpicker{    background: url('../img/colorpicker_img/custom_background.png');}
+.colorpicker_hue div{background: url('../img/colorpicker_img/custom_indic.gif');}
+.colorpicker_hex{background: url('../img/colorpicker_img/custom_hex.png');}
+.colorpicker_color div {background: url('../img/colorpicker_img/colorpicker_overlay.png');}
+.colorpicker_color div div{background: url('../img/colorpicker_img/colorpicker_select.gif');}
+.colorpicker_rgb_r{background: url('../img/colorpicker_img/custom_rgb_r.png');}
+.colorpicker_rgb_g{background: url('../img/colorpicker_img/custom_rgb_g.png');}
+.colorpicker_rgb_b{background: url('../img/colorpicker_img/custom_rgb_b.png');}
+.colorpicker_hsb_h{background: url('../img/colorpicker_img/custom_hsb_h.png');}
+.colorpicker_hsb_s{background: url('../img/colorpicker_img/custom_hsb_s.png');}
+.colorpicker_hsb_b{background: url('../img/colorpicker_img/custom_hsb_b.png');}
+.colorpicker_submit{background: url('../img/colorpicker_img/custom_submit.png');}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-90deg);
+    }
+}
+
+@keyframes rotateBack{
+    from{
+        transform: rotateZ(-90deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}

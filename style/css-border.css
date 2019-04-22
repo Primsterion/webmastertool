@@ -1,0 +1,143 @@
+.css-menu-border{
+    display: none;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.css-menu-border input[type=text]{
+    position: relative;
+    bottom: 5.2px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--range-clr);
+    width: 50px;
+}
+
+.corner, .border-style, .box-border{
+    display: inline-block;
+}
+
+.corner .range{
+    margin: 14px 0 !important;
+}
+
+.border-style .p-bd-stl{
+    margin-top: 10px;
+}
+
+.css-code-border{
+    width: 80%;
+    height: 125px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    margin: 12vh auto 0 auto;
+    overflow: hidden;
+}
+
+.css-code-border textarea{
+    width: 95%;
+    height: 70px;
+    text-align: left;
+    padding: 10px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 8pt;
+}
+
+.corner{
+    width: 169px;
+    height: 248px;
+}
+
+.corner > input[type=text]{
+    bottom: 5px;
+}
+
+
+.border-style{
+    width: 205px;
+    height: 145px;
+}
+
+.range-border-width{
+    width: 150px !important;   
+}
+
+.border-style select{
+    background: none;
+    border: none;
+    float: right;
+    margin-top: 11px;
+}
+
+.border-style > .range{
+    margin: 10px 0;
+}
+
+.color-br{
+    width: 25px;
+    height: 25px;
+    background: #aaaaaa;
+    margin-top: 10px;
+    float: right;
+}
+
+.p-bd-stl, #bs-st{
+    display: inline-block;
+}
+
+.color-br, .p-bd{
+    display: inline-block;
+}
+
+.p-bd{
+    padding-top: 14px;
+}
+
+.box-border{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    background: #C4C4C4;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.block-border{
+    background: #F7F7F7;
+    width: 200px;
+    height: 200px;
+}
+
+.color-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #009688;
+    background: none;
+}
+
+.css-code-border{
+    height: 25%;
+    position: relative;
+    margin: 5vh auto;
+}
+
+.copy-btn-border{
+    position: absolute;
+    float: right;
+    right: 40px;
+    bottom: 20px;
+    color: var(--range-clr);
+    background: transparent;
+    border: none;
+    font-family: var(--font);
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}

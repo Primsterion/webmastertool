@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+
+:root{
+    --font: 'Roboto Mono', sans-serif;
+    --bg: #ECEAEA;
+    --head-bg: #FAFAFA; 
+    --bg-tool: #F6F6F6;
+    --range-clr: #009688;
+    --shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.09);
+}
